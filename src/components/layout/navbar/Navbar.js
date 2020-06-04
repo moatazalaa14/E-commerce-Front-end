@@ -1,5 +1,5 @@
 import React from "react"
-import {logo} from "../../../logo.svg"
+import logo from "../../../logo.svg"
 import style from "./Navbar.module.css"
 export const Navbar=()=>{
     return(
@@ -9,7 +9,7 @@ export const Navbar=()=>{
                 <h1 className={style.navbar__logo_heading}>E-commerce product</h1>
             </div>
             <div className={style.navbar__mycart}>
-                <button className={style.navbar__btn}>MyCart</button>
+                <button className={style.navbar__mycart_btn}>MyCart</button>
             </div>
 
         </nav>

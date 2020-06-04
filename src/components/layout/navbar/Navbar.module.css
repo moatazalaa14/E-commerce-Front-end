@@ -7,11 +7,33 @@
     grid-template-columns: 1fr 1fr;
     background-color: #2a2a72;
     align-items: center;
+    height: 15vh;
+    margin-bottom: 10rem;
+    justify-items: center;
 
 }
 .navbar__logo{
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
-.navbar__mycart{
 
+.navbar__logo_heading{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    }
+.navbar__mycart_btn{
+color: white;
+background:none;
+border: 2px solid white;
+border-radius: 5px;
+height: 20px;
+width: 100px;
+cursor: pointer;
+}
+@media (max-width:797px){
+    .navbar__logo_heading{
+                font-size: 10pt;
+        } 
 }

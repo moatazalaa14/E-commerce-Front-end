@@ -4,7 +4,7 @@ export const Footer =()=>{
     return(
         <footer className={style.footer}>
             <div className={style.footer__rights}>
-                <p>All rights reserved</p>
+                <p className={style.footer__rights_para}>All rights reserved</p>
             </div>
             <div className={style.footer__follow}>
                 <form>
