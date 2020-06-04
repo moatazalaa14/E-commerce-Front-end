@@ -1,0 +1,17 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+.navbar{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #2a2a72;
+    align-items: center;
+
+}
+.navbar__logo{
+
+}
+.navbar__mycart{
+
+}
