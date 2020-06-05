@@ -1,4 +1,30 @@
 .products{
     display:grid;
     grid-template-columns: repeat(3,1fr);
+    justify-items:center;
+    grid-gap: 1rem 1rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+@media(max-width:797px){
+    .products{
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width:798px){
+    .products{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:1201px){
+.products{
+    grid-template-columns: repeat(3,1fr);
+}
+}
+.products_heading{
+    color: #2a2a72;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20pt;
 }

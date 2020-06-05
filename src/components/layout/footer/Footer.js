@@ -8,7 +8,7 @@ export const Footer =()=>{
             </div>
             <div className={style.footer__follow}>
                 <form>
-                    <input type="email" />
+                    <input type="email" placeholder="Your Email ..."/>
                     <button>Send</button>
                 </form>
             </div>

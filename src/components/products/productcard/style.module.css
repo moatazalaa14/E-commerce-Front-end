@@ -1,0 +1,35 @@
+.price , .company{
+color: #2a2a72;
+display: inline-block;
+font-size: 14pt;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+}
+.productcard{
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 5px gray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.5fr ;
+}
+.showbtn{
+    display: block;
+    margin: 1rem 0 1rem 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: none;
+    color: #2a2a72;
+    border: #2a2a72 solid 3px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.showbtn:hover{
+    background-color: #2a2a72;
+    color: white;
+}
+.cardinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
