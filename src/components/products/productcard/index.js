@@ -1,18 +1,10 @@
 import React  from "react"
 import style from "./style.module.css"
+import {Popup} from "./../Allproduct/popup/popup"
 export const ProductCard =({product ,popupHandling ,isopen ,popupClosingHandling})=>{   
     return(
         <>
-              {isopen.opened ? <section className={style.popup}>
-                <div className={style.popup_image}>
-                  <button onClick={popupClosingHandling}>X</button>
-                    <img src={product.img} />
-                    <p className={style.popup_image_title}>{product.title}</p>
-                    <button className={style.popup_image_btn}>Add this product to my cart</button>
-                    <button className={style.popup_image_btn}>Read more about this product</button>
-                </div>
-
-              </section>:null}
+             {isopen.opened? <Popup product={product} isopen={isopen} popupClosingHandling={popupClosingHandling}/>:null}
 
             <div key={product.id} className={style.productcard}>
                <div>
