@@ -18,6 +18,7 @@ https://www.iconfinder.com/Makoto_msk */
 
 export const storeProducts = [
   {
+    index:0,
     id: 1,
     title: "Google Pixel - Black",
     img: img1,
@@ -30,6 +31,7 @@ export const storeProducts = [
     total: 0
   },
   {
+    index:1,
     id: 2,
     title: "Samsung S7",
     img: img2,
@@ -42,6 +44,8 @@ export const storeProducts = [
     total: 0
   },
   {
+    index:2,
+
     id: 3,
     title: "HTC 10 - Black",
     img: img3,
@@ -54,6 +58,8 @@ export const storeProducts = [
     total: 0
   },
   {
+    index:3,
+
     id: 4,
     title: "HTC 10 - White",
     img: img4,
@@ -66,6 +72,8 @@ export const storeProducts = [
     total: 0
   },
   {
+    index:4,
+
     id: 5,
     title: "HTC Desire 626s",
     img: img5,
@@ -78,6 +86,8 @@ export const storeProducts = [
     total: 0
   },
   {
+    index:5,
+
     id: 6,
     title: "Vintage Iphone",
     img: img6,
@@ -90,6 +100,8 @@ export const storeProducts = [
     total: 0
   },
   {
+    index:6,
+
     id: 7,
     title: "Iphone 7",
     img: img7,
@@ -102,6 +114,8 @@ export const storeProducts = [
     total: 0
   },
   {
+    index:7,
+
     id: 8,
     title: "Smashed Iphone",
     img: img8,

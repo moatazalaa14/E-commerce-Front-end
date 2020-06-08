@@ -1,0 +1,35 @@
+.singleProductPage{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.singleProductPage_title{
+    color: #2a2a72;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.singleProductPage_company{
+    color: gray;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2rem;
+}
+.singleProductPage_info{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1rem;
+}
+.singleProductPage_addbtn{
+    background-color: #2a2a72;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+.singleProductPage_backbtn{
+    background-color: #2a2a72;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1rem;
+}

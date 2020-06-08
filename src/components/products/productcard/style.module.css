@@ -33,3 +33,23 @@ font-weight: bold;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
 }
+.readmore_btn{
+    background-color: #2a2a72;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1rem;
+
+}
+.readmore_btn:hover{
+    background-color: white;
+    color: #2a2a72;
+    border: #2a2a72 solid 3px;
+    font-weight: bold;
+}
+
+.popup{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    justify-items: center;
+}
