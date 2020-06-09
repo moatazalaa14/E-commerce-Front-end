@@ -2,9 +2,10 @@ import React from "react"
 import style from "./style.module.css"
 import {Link} from "react-router-dom"
 import {useRouteMatch} from "react-router-dom"
-export const SinglePage =({productStore})=>{
+export const SinglePage =({productStore ,addHandling})=>{
     const match =useRouteMatch()
     const singleProduct = productStore[match.params.index]
+    
     return(
         <>
             <div className={style.singleProductPage}>
@@ -15,7 +16,7 @@ export const SinglePage =({productStore})=>{
                     <h1 className={style.singleProductPage_title}>{singleProduct.title}</h1>
                     <p className={style.singleProductPage_company}>{singleProduct.company}</p>
                     <p className={style.singleProductPage_info}>{singleProduct.info}</p>
-                    <button className={style.singleProductPage_addbtn}>Add to my cart</button>
+                    <button className={style.singleProductPage_addbtn} onClick={()=>addHandling(singleProduct)}>Add to my cart</button>
                    <Link to="/">
                     <button className={style.singleProductPage_backbtn}>Back to all products</button>
                     </Link>

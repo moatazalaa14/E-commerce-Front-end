@@ -3,7 +3,7 @@ import style from "./style.module.css"
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import { Link } from 'react-router-dom';
-export const ProductCard =({product ,popupHandling ,isopen ,popupClosingHandling})=>{  
+export const ProductCard =({product ,popupHandling ,isopen ,popupClosingHandling,addHandling})=>{  
     const [st ,setSt]=useState({
         open:false
     })
@@ -39,7 +39,7 @@ export const ProductCard =({product ,popupHandling ,isopen ,popupClosingHandling
                     <Link to={`/products/${product.index}`}>
                         <button className={style.readmore_btn}>Read more about this product</button>
                     </Link>
-                    <button className={style.readmore_btn}>Add this product to my cart</button>
+                    <button className={style.readmore_btn} onClick={()=>addHandling(product)}>Add this product to my cart</button>
 
                     </div>
                     </div>

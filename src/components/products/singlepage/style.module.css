@@ -33,3 +33,13 @@
     cursor: pointer;
     padding: 1rem;
 }
+@media(max-width:797px){
+    .singleProductPage{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .singleProductPage_title,.singleProductPage_company,.singleProductPage_info{
+        text-align: center;
+    }
+}
