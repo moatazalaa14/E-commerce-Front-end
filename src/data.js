@@ -1,11 +1,11 @@
-import img1 from "./img/product-1.png";
-import img2 from "./img/product-2.png";
-import img3 from "./img/product-3.png";
-import img4 from "./img/product-4.png";
-import img5 from "./img/product-5.png";
-import img6 from "./img/product-6.png";
-import img7 from "./img/product-7.png";
-import img8 from "./img/product-8.png";
+import img1 from "./assets/product-1.png";
+import img2 from "./assets/product-2.png";
+import img3 from "./assets/product-3.png";
+import img4 from "./assets/product-4.png";
+import img5 from "./assets/product-5.png";
+import img6 from "./assets/product-6.png";
+import img7 from "./assets/product-7.png";
+import img8 from "./assets/product-8.png";
 
 import shortid from "shortid";
 
