@@ -5,7 +5,7 @@ export const SingleProductInCart =({product ,removeHandling ,addMoreProduct ,red
     return(
         <>
             <div className={style.productcart}>
-                        <img src={product.img} className={style.productcart_img}/>
+                        <img src={product.img} className={style.productcart_img} alt={product.title}/>
                         <div>
                             <p>Name:{product.title}</p>
                             <p>Company:{product.company}</p>
@@ -14,12 +14,15 @@ export const SingleProductInCart =({product ,removeHandling ,addMoreProduct ,red
                             <p>{product.price}$</p>
                         </div>
                         <div>
-                            <button onClick={()=>reduceAllProduct(product)}>-</button>
-                            <p>{product.count}</p>
-                            <button onClick={()=>addMoreProduct(product)}>+</button>
+                            <button onClick={()=>reduceAllProduct(product)} className={style.productcart_abs}>-</button>
+                            <p className={style.productcart_count}>{product.count}</p>
+                            <button onClick={()=>addMoreProduct(product)} className={style.productcart_sum}>+</button>
                         </div>
                         <div>
-                            <button onClick={()=>removeHandling(product)}>Delete</button>
+                            <button className={style.productcart_del} onClick={()=>removeHandling(product)}>Delete</button>
+                        </div>
+                        <div className={style.productcart_total}> 
+                            <p >Total price : {(product.count)*(product.price)}</p>
                         </div>
                     </div>
         </>

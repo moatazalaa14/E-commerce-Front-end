@@ -10,7 +10,7 @@ export const SinglePage =({productStore ,addHandling})=>{
         <>
             <div className={style.singleProductPage}>
                 <div className={style.singleProductPage_img}>
-                    <img src={singleProduct.img} />
+                    <img src={singleProduct.img} alt={singleProduct.title}/>
                 </div>
                 <div>
                     <h1 className={style.singleProductPage_title}>{singleProduct.title}</h1>

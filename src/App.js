@@ -10,7 +10,7 @@ function App() {
   const [products, setProducts] = useState(storeProducts);
   const addHandling = (singleProduct) => {
    const newProducts= products.map((product) => {
-      if (singleProduct.id === product.id && singleProduct.inCart == false) {
+      if (singleProduct.id === product.id && singleProduct.inCart === false) {
         return {
           ...product,
           inCart: !product.inCart,
@@ -19,10 +19,11 @@ function App() {
       return product;
     });
     setProducts(newProducts)
+    window.alert("Item is added")
   };
   const removeHandling = (singleProduct) => {
     const newProducts= products.map((product) => {
-       if (singleProduct.id === product.id && singleProduct.inCart == true) {
+       if (singleProduct.id === product.id && singleProduct.inCart === true) {
          return {
            ...product,
            inCart: !product.inCart,
@@ -31,6 +32,7 @@ function App() {
        return product;
      });
      setProducts(newProducts)
+     window.alert("Item is removed")
    };
    const addMoreProduct=(singleProduct )=>{
      const newProducts= products.map((product) => {

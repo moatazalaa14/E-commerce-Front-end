@@ -19,7 +19,7 @@ export const ProductCard =({product ,popupHandling ,isopen ,popupClosingHandling
 
             <div key={product.id} className={style.productcard}>
                <div>
-                    <img src={product.img} />
+                    <img src={product.img} alt={product.title}/>
                </div>
                <div className={style.cardinfo}>
                     <p className={style.price}>{product.price}$</p>
@@ -29,7 +29,7 @@ export const ProductCard =({product ,popupHandling ,isopen ,popupClosingHandling
                 <Modal open={open} onClose={onCloseModal} center>
                 <div className={style.popup}>
                     <div>
-                        <img src={product.img} />
+                        <img src={product.img} alt={product.title}/>
                 </div>
                 <div className={style.cardinfo}>
                         <p className={style.price}>{product.price}$</p>

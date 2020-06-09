@@ -21,7 +21,7 @@ export const AllProducts = ({productStore ,addHandling}) => {
       <h1 className={style.products_heading}>All Products</h1>
       <section className={style.products}>
         {productStore.map((product) => {
-          return <ProductCard product={product} popupHandling={popupHandling} isopen={isOpen} popupClosingHandling={popupClosingHandling} addHandling={addHandling}/>;
+          return <ProductCard product={product} popupHandling={popupHandling} isopen={isOpen} popupClosingHandling={popupClosingHandling} addHandling={addHandling} key={product.index}/>;
         })}
       </section>
     </>
